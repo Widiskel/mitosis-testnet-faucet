@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "claim": "node claim.js"
   },
@@ -19,6 +20,6 @@
     "axios": "^1.6.7",
     "cron": "^3.1.6",
     "readline-sync": "^1.4.10",
-    "twister": "^0.3.0"
+    "twisters": "^1.1.0"
   }
 }

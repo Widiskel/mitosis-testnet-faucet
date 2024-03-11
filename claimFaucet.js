@@ -1,7 +1,8 @@
-const axios = require("axios");
-const { CronJob } = require("cron");
+import axios from "axios";
+import { CronJob } from "cron";
+import { twisters } from './claim.js';
 
-const claimFaucet = async (address) => {
+export const claimFaucet = async (address) => {
   try {
     const { data } = await axios({
       method: "GET",
@@ -80,5 +81,3 @@ const claimFaucet = async (address) => {
     }
   }
 };
-
-module.exports = claimFaucet;
